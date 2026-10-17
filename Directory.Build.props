@@ -1,0 +1,26 @@
+<Project>
+
+  <!--
+    Mairigold.NET 解决方案共享编译设置。
+    纯 CPU 软件光栅渲染引擎，零第三方依赖，可跨平台。
+  -->
+
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);CS1591;CS0169;CS0414</NoWarn>
+
+    <Version>1.0.0</Version>
+    <Authors>Mairigold.NET</Authors>
+    <Company>Mairigold.NET</Company>
+    <Product>Mairigold.NET</Product>
+    <Description>通用型纯 CPU 软件光栅渲染引擎。</Description>
+    <NeutralLanguage>zh-Hans</NeutralLanguage>
+
+    <Deterministic>true</Deterministic>
+    <MSBuildTreatWarningsAsErrors>false</MSBuildTreatWarningsAsErrors>
+  </PropertyGroup>
+
+</Project>
