@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- Mairigold.Engine：通用渲染引擎本体。纯托管库，不依赖任何第三方包，可跨平台。 -->
+    <TargetFramework>net8.0</TargetFramework>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Mairigold.Engine</AssemblyName>
+    <RootNamespace>Mairigold</RootNamespace>
+    <IsPackable>true</IsPackable>
+    <PackageId>Mairigold.Engine</PackageId>
+    <PackageTags>renderer;rasterizer;software;cpu;3d;graphics</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Description>通用型纯 CPU 软件光栅渲染引擎：透视/正交投影、多光源、透明混合、视锥剔除、齐次裁剪、深度缓冲、可插拔着色器。</Description>
+  </PropertyGroup>
+
+  <!--
+    Debug 配置下也开启优化器。
+
+    原因：软件光栅化器的热路径是「每个片元一次」的像素循环，
+    循环体里全是 Vector3 / RgbColor 这类结构体的运算符重载。
+    关闭优化时这些运算符不会被内联，一次片元着色要付出十几次真实调用
+    和几十次结构体拷贝——性能会被压在不可用区间。
+
+    因此把引擎本体在 Debug 下也编译为优化代码，
+    而调用方工程保持 Debug 语义：调逻辑时单步、看局部变量都照常，只是不必为引擎的性能买单。
+    DebugType 保持 full，堆栈里依然有行号。
+  -->
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+
+</Project>

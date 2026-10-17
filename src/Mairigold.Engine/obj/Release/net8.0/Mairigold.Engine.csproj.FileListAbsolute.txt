@@ -1,0 +1,11 @@
+D:\AAA\Mairigold.NET-master\src\Mairigold.Engine\bin\Release\net8.0\Mairigold.Engine.deps.json
+D:\AAA\Mairigold.NET-master\src\Mairigold.Engine\bin\Release\net8.0\Mairigold.Engine.dll
+D:\AAA\Mairigold.NET-master\src\Mairigold.Engine\bin\Release\net8.0\Mairigold.Engine.pdb
+D:\AAA\Mairigold.NET-master\src\Mairigold.Engine\obj\Release\net8.0\Mairigold.Engine.GeneratedMSBuildEditorConfig.editorconfig
+D:\AAA\Mairigold.NET-master\src\Mairigold.Engine\obj\Release\net8.0\Mairigold.Engine.AssemblyInfoInputs.cache
+D:\AAA\Mairigold.NET-master\src\Mairigold.Engine\obj\Release\net8.0\Mairigold.Engine.AssemblyInfo.cs
+D:\AAA\Mairigold.NET-master\src\Mairigold.Engine\obj\Release\net8.0\Mairigold.Engine.csproj.CoreCompileInputs.cache
+D:\AAA\Mairigold.NET-master\src\Mairigold.Engine\obj\Release\net8.0\Mairigold.Engine.dll
+D:\AAA\Mairigold.NET-master\src\Mairigold.Engine\obj\Release\net8.0\refint\Mairigold.Engine.dll
+D:\AAA\Mairigold.NET-master\src\Mairigold.Engine\obj\Release\net8.0\Mairigold.Engine.pdb
+D:\AAA\Mairigold.NET-master\src\Mairigold.Engine\obj\Release\net8.0\ref\Mairigold.Engine.dll
